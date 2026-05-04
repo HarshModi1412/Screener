@@ -5,7 +5,7 @@ postgrest==0.16.8
 gotrue==2.4.2
 realtime==1.0.6
 storage3==0.7.4
-tvdatafeed==2.1.0
+git+https://github.com/rongardF/tvdatafeed.git
 requests==2.32.3
 python-dateutil==2.9.0.post0
 pytz==2024.1
