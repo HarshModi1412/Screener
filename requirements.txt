@@ -1,5 +1,5 @@
 streamlit==1.37.0
-pandas==2.2.2
+pandas
 supabase==2.4.5
 postgrest==0.16.8
 gotrue==2.4.2
