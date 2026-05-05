@@ -246,16 +246,13 @@ def save(results):
 
 # ---------------- MAIN PIPELINE ----------------
 def run_pipeline():
-    print("Running pipeline...")
+    import sys
 
-    update_trade_status()
-    fetch_data()
-    df = preprocess()
-    results = detect(df)
-    save(results)
+    with st.spinner("⚡ Running pipeline... please wait (~7 min)"):
+        subprocess.run([sys.executable, PIPELINE_FILE], check=True)
 
-    print("Pipeline completed")
-
+    st.success("Pipeline completed")
+    st.rerun()
 
 if __name__ == "__main__":
     run_pipeline()
